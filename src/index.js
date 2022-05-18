@@ -1,2 +1,1 @@
-import { camelCase } from 'lodash';
-import style from './main.css';
+import './main.css';
