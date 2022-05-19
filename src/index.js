@@ -36,3 +36,8 @@ form.addEventListener('submit', async (e) => {
   name.value = '';
   score.value = '';
 });
+
+const reflesh = document.getElementById('reflesh');
+reflesh.addEventListener('click', () => {
+  displayScore();
+});
