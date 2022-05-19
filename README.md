@@ -1,12 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Webpack templete
+# Leaderboard Project
 
-> This is a portifolio project that was implemented from the figma design
-
-# Link to official documentation
-
-## [doc](https://webpack.js.org/)
+> JavaScript project for the Leaderboard list app, using Webpack and ES6 features, notably modules. this app consume the Leaderboard API using JavaScript async and await and add some styling.
 
 ## Built With
 
@@ -14,6 +10,7 @@
 - CSS3
 - Sass
 - JavaScript
+- Webpack
 
 ## Getting Started
 
@@ -26,7 +23,7 @@ You need to have a basic knowledge about HTML and CSS
 
 ### Setup
 
-#### clone this project (using git clone https://github.com/bizip/webpack-templete) to your local computer and use telminal to navigate into the parent directory of this project.
+#### clone this project (using git clone https://github.com/bizip/leaderboard.git) to your local computer and use telminal to navigate into the parent directory of this project.
 
 ### Install
 
@@ -34,7 +31,7 @@ You need to have a basic knowledge about HTML and CSS
 
 ### Usage
 
-If you have live server visual studio code etension installed open this project with live server
+run: npm run dev
 
 ## Authors
 
