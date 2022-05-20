@@ -1,4 +1,3 @@
-import axios from 'axios';
 import './main.css';
 
 const form = document.getElementById('form-data');
@@ -7,21 +6,22 @@ const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/game
 
 const displayScore = async () => {
   const leaderList = document.getElementById('leader__list');
-  const getResult = await axios.get(url);
-  const result = await getResult.data.result;
-  leaderList.innerHTML = result.map((el, index) => (
+  const getResult = await fetch(url);
+  const result = await getResult.json();
+  leaderList.innerHTML = result.result.map((el, index) => (
     `<li class=${index % 2 !== 0 ? 'gray' : ''}><p>${el.user} : ${el.score}</p></li>`
   )).join(' ');
 };
 displayScore();
 const addResult = async (data) => {
-  await axios({
-    method: 'post',
-    url,
-    data,
+  await fetch({
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
 
   });
-  displayScore();
 };
 
 form.addEventListener('submit', async (e) => {
@@ -39,6 +39,5 @@ form.addEventListener('submit', async (e) => {
 
 const reflesh = document.getElementById('reflesh');
 reflesh.addEventListener('click', () => {
-  window.location.reload();
   displayScore();
 });
