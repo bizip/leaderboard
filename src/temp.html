@@ -17,25 +17,19 @@
     <section class="leader__section">
         <div>
             <div class="leader__header">
-                <h2>Recent score</h2> <button type="button">Reflesh</button>
+                <h2>Recent score</h2> <button type="button" id="reflesh">Reflesh</button>
             </div>
-          <ul class="leader__list">
-              <li><p>Name:100</p></li>
-              <li class="gray"><p>Name:100</p></li>
-              <li><p>Name:100</p></li>
-              <li class="gray"><p>Name:100</p></li>
-              <li><p>Name:100</p></li>
-              <li class="gray"><p>Name:100</p></li>
-
+          <ul class="leader__list" id="leader__list">
+              <li><p>Loading ...</p></li>
           </ul>
         </div>
         <div>
             <div>
                 <h2>Add your score</h2>
             </div>
-          <form>
+          <form id="form-data">
               <label for="name"><input type="text" placeholder="Your name" id="name" /></label><br />
-              <label for="score"><input type="text" placeholder="Your score" id="score" /></label><br />
+              <label for="score"><input type="number" placeholder="Your score" id="score" /></label><br />
               <div class="submit"><button type="submit">Submit</button></div>
           </form>
         </div>

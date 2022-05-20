@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "dev": "webpack serve"
+    "start": "webpack serve"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,9 @@
   "homepage": "https://github.com/bizip/leaderboard#readme",
   "dependencies": {
     "@babel/core": "^7.17.10",
+    "@babel/plugin-transform-runtime": "^7.18.0",
     "@babel/preset-env": "^7.17.10",
+    "axios": "^0.27.2",
     "babel-loader": "^8.2.5",
     "html-webpack-plugin": "^5.5.0",
     "loadash": "^1.0.0",
