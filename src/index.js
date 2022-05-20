@@ -32,6 +32,7 @@ form.addEventListener('submit', async (e) => {
     user: name.value,
     score: +score.value,
   };
+  // call add result function
   addResult(data);
   name.value = '';
   score.value = '';
