@@ -39,5 +39,6 @@ form.addEventListener('submit', async (e) => {
 
 const reflesh = document.getElementById('reflesh');
 reflesh.addEventListener('click', () => {
+  window.location.reload();
   displayScore();
 });
